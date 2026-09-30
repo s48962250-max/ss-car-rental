@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SS Rental Cars - Rompicherla | Baleno & Innova</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+html{scroll-behavior:smooth;}
+body{
+  min-height:100vh;
+  background-color:#07052b;
+  background-image:url('data:image/jpeg;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsxVZgAKrMVWYACqzFVmAAqsyAdgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/2Q==');
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  color:#f7f7f7;
+  position:relative;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-10;
+  background:
+    linear-gradient(115deg,transparent 0%,rgba(255,255,255,.035) 35%,transparent 55%),
+    repeating-linear-gradient(135deg,rgba(255,255,255,.012) 0px,rgba(255,255,255,.012) 1px,transparent 1px,transparent 8px);
+}
+
+.glass{
+  background:linear-gradient(135deg,rgba(255,255,255,.16),rgba(20,10,70,.28));
+  backdrop-filter:blur(24px) saturate(145%);
+  -webkit-backdrop-filter:blur(24px) saturate(145%);
+  border:1px solid rgba(255,255,255,.18);
+  box-shadow:0 20px 70px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.16);
+}
+.glass-dark{
+  background:linear-gradient(135deg,rgba(7,5,35,.90),rgba(25,12,65,.72));
+  backdrop-filter:blur(26px) saturate(145%);
+  -webkit-backdrop-filter:blur(26px) saturate(145%);
+  border-bottom:1px solid rgba(255,255,255,.14);
+  box-shadow:0 15px 50px rgba(0,0,0,.4), inset 0 1px 0 rgba(255,255,255,.10);
+}
+section .glass{color:#f7f7f7;}
+.glass h1,.glass h2,.glass h3,.glass p,.glass span{color:inherit;}
+.slider{
+  overflow:hidden;
+  position:relative;
+  border:1px solid rgba(255,255,255,.20);
+  box-shadow:0 15px 45px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.20);
+}
+.slide img{
+  user-select:none;
+  -webkit-user-drag:none;
+}
+button,a{
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* BLACK FONT - SPECIFICATIONS */
+.specifications-section,
+.specifications-section h3,
+.specifications-section p,
+.specifications-section i,
+.specifications-section span{
+  color:#000 !important;
+}
+.specifications-section .bg-white{
+  color:#000 !important;
+}
+.specifications-section .bg-white p{
+  color:#000 !important;
+}
+.specifications-section .bg-white i{
+  color:#000 !important;
+}
+
+
+/* BLACK FONT - INNOVA SPECIFICATIONS */
+.innova-specifications,
+.innova-specifications h3,
+.innova-specifications p,
+.innova-specifications span,
+.innova-specifications i{
+  color:#000 !important;
+}
+.innova-specifications .bg-white,
+.innova-specifications .bg-white p,
+.innova-specifications .bg-white i{
+  color:#000 !important;
+}
+
+
+/* PREMIUM TOP RUNNING CAR ANIMATION */
+.car-animation-wrap{
+  position:relative;
+  width:100%;
+  height:110px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  margin:8px auto 0;
+}
+.running-car{
+  position:relative;
+  width:180px;
+  height:70px;
+  animation:carBounce .28s ease-in-out infinite alternate;
+  filter:drop-shadow(0 12px 14px rgba(0,0,0,.35));
+}
+.car-body{
+  position:absolute;
+  left:22px;
+  top:22px;
+  width:136px;
+  height:34px;
+  background:linear-gradient(145deg,#ffffff,#cfd4dc 48%,#6e7480);
+  border-radius:25px 18px 9px 9px;
+  border:2px solid rgba(0,0,0,.65);
+  box-shadow:inset 0 3px 5px rgba(255,255,255,.8),inset 0 -5px 8px rgba(0,0,0,.22);
+}
+.car-roof{
+  position:absolute;
+  left:55px;
+  top:5px;
+  width:75px;
+  height:30px;
+  background:linear-gradient(135deg,#1a2330,#6d8194);
+  border:2px solid #111;
+  border-bottom:0;
+  border-radius:35px 35px 4px 4px;
+  transform:skewX(-8deg);
+}
+.car-window{
+  position:absolute;
+  left:62px;
+  top:10px;
+  width:29px;
+  height:19px;
+  background:linear-gradient(135deg,#bcecff,#1b3148);
+  border:1px solid rgba(255,255,255,.6);
+  transform:skewX(-8deg);
+}
+.car-window.back{
+  left:94px;
+}
+.car-light{
+  position:absolute;
+  right:23px;
+  top:29px;
+  width:9px;
+  height:7px;
+  border-radius:50%;
+  background:#fff9c4;
+  box-shadow:0 0 12px 4px rgba(255,245,150,.8);
+}
+.car-tail{
+  position:absolute;
+  left:23px;
+  top:30px;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#ff3030;
+  box-shadow:0 0 7px rgba(255,0,0,.65);
+}
+.wheel{
+  position:absolute;
+  bottom:2px;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:#101114;
+  border:3px solid #30343a;
+  box-shadow:inset 0 0 0 6px #08090b,0 3px 5px rgba(0,0,0,.45);
+  animation:wheelSpin .42s linear infinite;
+}
+.wheel:after{
+  content:"";
+  position:absolute;
+  inset:9px;
+  border-radius:50%;
+  background:repeating-conic-gradient(#c7cbd1 0deg 12deg,transparent 12deg 45deg);
+  border:2px solid #8c929a;
+}
+.wheel.front{right:31px;}
+.wheel.back{left:31px;}
+.dust{
+  position:absolute;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:rgba(224,205,174,.72);
+  filter:blur(1px);
+  left:12px;
+  bottom:6px;
+  animation:dustPuff .9s ease-out infinite;
+}
+.dust.d2{left:1px;bottom:14px;animation-delay:.25s;width:9px;height:9px;}
+.dust.d3{left:24px;bottom:0;animation-delay:.45s;width:7px;height:7px;}
+.car-glow{
+  position:absolute;
+  bottom:9px;
+  left:40px;
+  width:105px;
+  height:9px;
+  border-radius:50%;
+  background:rgba(255,255,255,.18);
+  filter:blur(7px);
+}
+@keyframes wheelSpin{to{transform:rotate(360deg)}}
+@keyframes carBounce{from{transform:translateY(0)}to{transform:translateY(-3px)}}
+@keyframes dustPuff{
+  0%{transform:translate(0,0) scale(.4);opacity:0}
+  20%{opacity:.75}
+  100%{transform:translate(-42px,-13px) scale(2.1);opacity:0}
+}
+@media(max-width:640px){
+  .car-animation-wrap{height:92px;}
+  .running-car{transform:scale(.82);}
+}
+
+@media(max-width:640px){
+  body:after{font-size:42px;letter-spacing:.10em;}
+  .glass{backdrop-filter:blur(18px) saturate(135%);-webkit-backdrop-filter:blur(18px) saturate(135%);}
+}
+@keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)} 70%{box-shadow:0 0 0 15px rgba(37,211,102,0)} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0)} }
+@keyframes shake { 0%,100%{transform:rotate(0)} 25%{transform:rotate(-10deg)} 75%{transform:rotate(10deg)} }
+@keyframes float { 0%{transform:translateY(0)} 50%{transform:translateY(-10px)} 100%{transform:translateY(0)} }
+@keyframes popIn { from{transform:scale(0.8); opacity:0} to{transform:scale(1); opacity:1} }
+.pulse{ animation:pulse 2s infinite; } .shake{ animation:shake 1.5s infinite; } .float{ animation:float 3.5s infinite ease-in-out; }
+.slider{ overflow:hidden; position:relative; }
+.slides{ display:flex; transition:transform 0.6s ease; }
+.slide{ min-width:100%; }
+.wave{ position:fixed; top:38%; left:0; width:100%; height:400px; z-index:-1; opacity:0.12; pointer-events:none; }
+.popup-bg{ background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); }
+.pop-anim{ animation: popIn 0.3s ease; }
+</style>
+</head>
+<body class="text-[#222]">
+
+<div class="fixed inset-0 -z-20 pointer-events-none bg-black/10"></div>
+<div class="wave"><svg viewBox="0 0 1440 320" class="w-full h-full" preserveAspectRatio="none"><path fill="#d6b56a" d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L0,320Z"></path></svg></div>
+
+<header class="glass-dark sticky top-0 z-40 text-white">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4 px-6">
+    <h1 class="text-2xl md:text-3xl font-black tracking-widest"><i class="fa-solid fa-car-side text-yellow-400"></i> SS RENTAL CARS</h1>
+    <div class="hidden md:block text-right text-sm"><p class="font-bold">SHAIK SAMEER - Owner</p><p class="text-white/60">9912182488</p></div>
+  </div>
+</header>
+
+<!-- PREMIUM RUNNING CAR LOGO ANIMATION -->
+<div class="car-animation-wrap" aria-label="SS Rental Cars animated car">
+  <div class="running-car">
+    <div class="car-glow"></div>
+    <div class="dust"></div>
+    <div class="dust d2"></div>
+    <div class="dust d3"></div>
+    <div class="car-body"></div>
+    <div class="car-roof"></div>
+    <div class="car-window"></div>
+    <div class="car-window back"></div>
+    <div class="car-light"></div>
+    <div class="car-tail"></div>
+    <div class="wheel back"></div>
+    <div class="wheel front"></div>
+  </div>
+</div>
+
+<section class="max-w-7xl mx-auto mt-6 px-4">
+  <div class="glass rounded-[2rem] p-8 text-center">
+    <p class="text-xs tracking-[0.3em] text-gray-500 font-bold">ROMPICHERLA • CHITTOOR DIST • AP</p>
+    <h2 class="text-4xl font-bold mt-2 font-serif">Welcome to SS Rental Cars</h2>
+    <p class="text-gray-500 mt-2">Baleno Zeta 2024 & Innova 7 Seater Available for Rent</p>
+  </div>
+</section>
+
+<!-- MAIN SLIDER - 8 IMAGES - 2 SEC INFINITY LOOP -->
+<section class="max-w-7xl mx-auto mt-6 px-4">
+  <div class="glass rounded-[2rem] p-4 md:p-6">
+    <h3 class="text-center font-black tracking-widest text-sm mb-4">OUR CARS GALLERY</h3>
+    <div class="slider rounded-[1.5rem] bg-white select-none" id="mainSliderBox">
+      <div class="slides" id="mainSlides">
+        <div class="slide"><img src="https://wallpaperaccess.com/full/1607577.jpg" class="w-full h-[280px] md:h-[420px] object-cover"></div>
+        <div class="slide"><img src="https://www.autovista.in/assets/img/new_cars_colour_variants/new-baleno-colour-pearl-arctic-white.jpg" class="w-full h-[280px] md:h-[420px] object-contain bg-white p-4"></div>
+        <div class="slide"><img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/221126/baleno-interior-dashboard-72.jpeg?isig=0&q=80" class="w-full h-[280px] md:h-[420px] object-cover"></div>
+        <div class="slide"><img src="https://i.pinimg.com/736x/9b/cc/13/9bcc13b6c9107e02292e498252136445.jpg" class="w-full h-[280px] md:h-[420px] object-cover"></div>
+        <div class="slide"><img src="https://i.pinimg.com/474x/c1/e1/e5/c1e1e51ec048fd5b2c22d9d669fc0b33.jpg" class="w-full h-[280px] md:h-[420px] object-cover"></div>
+        <div class="slide"><img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/140809/innova-crysta-exterior-left-front-three-quarter.jpeg?isig=0&q=80" class="w-full h-[280px] md:h-[420px] object-cover"></div>
+        <div class="slide"><img src="https://media.istockphoto.com/id/2233812104/photo/toyota-innova.jpg?s=612x612&w=0&k=20&c=YhhLT-R8-_p60uRDGnpe6kHy0VLtoaM41hwARHVaZeQ=" class="w-full h-[280px] md:h-[420px] object-cover"></div>
+        <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzIMCIrbG_LPyj7zrKwq5ZAqnUZuZ8bz0S8hP_BLnSGxeAzAJ3tTi-nCA&s=10" class="w-full h-[280px] md:h-[420px] object-cover"></div>
+      </div>
+      <button onclick="moveMain(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full"><i class="fa-solid fa-chevron-left"></i></button>
+      <button onclick="moveMain(1)" class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-white w-10 h-10 rounded-full"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="flex justify-center gap-2 mt-4" id="mainDots"></div>
+    <p class="text-center text-xs text-gray-400 mt-2">Our Cars Gallery</p>
+  </div>
+</section>
+
+<!-- BALENO SECTION - REPLACED IMAGE + 2 SEC SLIDER -->
+<section class="max-w-7xl mx-auto mt-6 px-4">
+  <div class="glass rounded-[2rem] p-6 md:p-8">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <span class="bg-black text-white px-4 py-1 rounded-full text-xs font-bold">BALENO ZETA 2024 • PEARL ARCTIC WHITE</span>
+        <h2 class="text-3xl font-black mt-2">MARUTI SUZUKI BALENO</h2>
+        <div class="slider bg-white rounded-[1.5rem] p-4 mt-4 border shadow-inner select-none" id="balenoBox">
+          <div class="slides" id="balenoSlides">
+            <div class="slide"><img src="https://www.autovista.in/assets/img/new_cars_colour_variants/new-baleno-colour-pearl-arctic-white.jpg" class="w-full h-72 object-contain"></div>
+            <div class="slide"><img src="https://wallpaperaccess.com/full/1607577.jpg" class="w-full h-72 object-cover rounded-xl"></div>
+            <div class="slide"><img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/221126/baleno-interior-dashboard-72.jpeg?isig=0&q=80" class="w-full h-72 object-cover rounded-xl"></div>
+            <div class="slide"><img src="https://i.pinimg.com/474x/c1/e1/e5/c1e1e51ec048fd5b2c22d9d669fc0b33.jpg" class="w-full h-72 object-cover rounded-xl"></div>
+          </div>
+          <button onclick="moveBaleno(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black text-white w-8 h-8 rounded-full text-xs"><i class="fa-solid fa-chevron-left"></i></button>
+          <button onclick="moveBaleno(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white w-8 h-8 rounded-full text-xs"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="flex justify-center gap-2 mt-3" id="balenoDots"></div>
+      </div>
+      <div class="specifications-section">
+        <h3 class="font-bold border-l-4 border-black pl-3">Specifications - Baleno</h3>
+        <div class="grid grid-cols-2 gap-3 mt-4">
+          <div class="bg-white p-4 rounded-2xl text-center border"><i class="fa-solid fa-snowflake text-blue-500 text-xl"></i><p class="font-bold text-sm">AC</p><p class="text-xs text-gray-400">Auto Climate</p></div>
+          <div class="bg-white p-4 rounded-2xl text-center border"><i class="fa-solid fa-map-location-dot text-green-500 text-xl"></i><p class="font-bold text-sm">MAPS</p><p class="text-xs text-gray-400">SmartPlay Pro</p></div>
+          <div class="bg-white p-4 rounded-2xl text-center border"><i class="fa-solid fa-music text-red-500 text-xl"></i><p class="font-bold text-sm">SOUND GOOD</p><p class="text-xs text-gray-400">ARKAMYS</p></div>
+          <div class="bg-white p-4 rounded-2xl text-center border"><i class="fa-solid fa-car text-black text-xl"></i><p class="font-bold text-sm">ZETA</p><p class="text-xs text-gray-400">Top Model</p></div>
+        </div>
+        <button onclick="openPopup('BALENO ZETA 2024 - Pearl Arctic White')" class="w-full mt-6 bg-black text-white py-4 rounded-full font-black flex justify-center gap-2"><i class="fa-brands fa-whatsapp text-green-400 text-xl"></i> BOOK BALENO ON WHATSAPP</button>
+        <a href="tel:9912182488" class="block text-center mt-3 bg-white border border-black py-3 rounded-full font-bold"><i class="fa-solid fa-phone"></i> CALL TO BOOK</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INNOVA SECTION - 3D + 2 SEC SLIDER -->
+<section class="max-w-7xl mx-auto mt-6 px-4">
+  <div class="glass rounded-[2rem] p-6 md:p-8">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div class="order-2 md:order-1 innova-specifications">
+        <h3 class="font-bold border-l-4 border-black pl-3">TOYOTA INNOVA 7 SEATER</h3>
+        <div class="grid grid-cols-2 gap-3 mt-4">
+          <div class="bg-white p-4 rounded-2xl text-center border"><i class="fa-solid fa-people-group text-blue-500 text-xl"></i><p class="font-bold text-sm">7 SEATER</p></div>
+          <div class="bg-white p-4 rounded-2xl text-center border"><i class="fa-solid fa-snowflake text-blue-500 text-xl"></i><p class="font-bold text-sm">DUAL AC</p></div>
+          <div class="bg-white p-4 rounded-2xl text-center border"><i class="fa-solid fa-shield-halved text-green-500 text-xl"></i><p class="font-bold text-sm">SAFE</p></div>
+          <div class="bg-white p-4 rounded-2xl text-center border"><i class="fa-solid fa-star text-yellow-500 text-xl"></i><p class="font-bold text-sm">LUXURY</p></div>
+        </div>
+        <button onclick="openPopup('INNOVA 7 SEATER')" class="w-full mt-6 bg-[#d8ceb5] border border-black py-4 rounded-full font-black flex justify-center gap-2"><i class="fa-brands fa-whatsapp text-green-700 text-xl"></i> BOOK INNOVA ON WHATSAPP</button>
+        <a href="tel:9912182488" class="block text-center mt-3 bg-black text-white py-3 rounded-full font-bold"><i class="fa-solid fa-phone"></i> CALL TO BOOK</a>
+      </div>
+      <div class="order-1 md:order-2 text-center">
+        
+        <h2 class="text-3xl font-black mt-2">TOYOTA INNOVA</h2>
+        <div class="slider bg-white rounded-[1.5rem] p-4 mt-4 border shadow-inner float select-none" id="innovaBox">
+          <div class="slides" id="innovaSlides">
+            <div class="slide"><img src="https://i.pinimg.com/736x/1d/ca/a1/1dcaa112feb096ccb2bade4f2385e8f7.jpg" class="w-full h-72 object-cover rounded-xl"></div>
+            <div class="slide"><img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/140809/innova-crysta-exterior-left-front-three-quarter.jpeg?isig=0&q=80" class="w-full h-72 object-cover rounded-xl"></div>
+            <div class="slide"><img src="https://media.istockphoto.com/id/2233812104/photo/toyota-innova.jpg?s=612x612&w=0&k=20&c=YhhLT-R8-_p60uRDGnpe6kHy0VLtoaM41hwARHVaZeQ=" class="w-full h-72 object-cover rounded-xl"></div>
+            <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzIMCIrbG_LPyj7zrKwq5ZAqnUZuZ8bz0S8hP_BLnSGxeAzAJ3tTi-nCA&s=10" class="w-full h-72 object-cover rounded-xl"></div>
+          </div>
+          <button onclick="moveInnova(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black text-white w-8 h-8 rounded-full text-xs"><i class="fa-solid fa-chevron-left"></i></button>
+          <button onclick="moveInnova(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white w-8 h-8 rounded-full text-xs"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="flex justify-center gap-2 mt-3" id="innovaDots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto mt-6 px-4 mb-24">
+  <div class="glass-dark rounded-[2rem] p-6 text-white grid md:grid-cols-2 gap-6">
+    <div><h2 class="text-xl font-black text-yellow-300">Contact SS Rental Cars</h2><p class="mt-3 text-sm"><i class="fa-solid fa-user text-yellow-400 w-6"></i> Owner: <b>SHAIK SAMEER</b></p><p class="text-sm"><i class="fa-solid fa-location-dot text-yellow-400 w-6"></i> Rompicherla, Chittoor Dist, AP, India</p><p class="text-sm"><i class="fa-solid fa-phone text-yellow-400 w-6"></i> 9912182488</p></div>
+    <iframe src="https://www.google.com/maps?q=Rompicherla,Chittoor,Andhra+Pradesh&z=13&output=embed" class="w-full h-48 rounded-xl"></iframe>
+  </div>
+</section>
+
+<!-- FLOATING BOOK NOW / CALL ICONS -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-4">
+  <button onclick="openContactPopup('whatsapp')" aria-label="Book Now on WhatsApp"
+    class="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center text-white text-3xl shadow-xl pulse border-2 border-white">
+    <i class="fa-brands fa-whatsapp"></i>
+  </button>
+  <button onclick="openContactPopup('call')" aria-label="Call SHAIK SAMEER"
+    class="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white text-xl shadow-xl shake border-2 border-white">
+    <i class="fa-solid fa-phone"></i>
+  </button>
+</div>
+
+<!-- QUICK CONTACT POPUP -->
+<div id="contactPopup" class="fixed inset-0 popup-bg hidden items-center justify-center z-[60] p-4">
+  <div class="bg-[#f5f1e8] rounded-[2rem] p-7 w-full max-w-sm pop-anim border border-white shadow-2xl relative text-center">
+    <button onclick="closeContactPopup()" class="absolute top-4 right-4 w-9 h-9 bg-black text-white rounded-full">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="w-20 h-20 mx-auto rounded-full bg-black text-yellow-300 flex items-center justify-center text-3xl shadow-lg">
+      <i class="fa-solid fa-car-side"></i>
+    </div>
+
+    <h2 class="text-2xl font-black mt-4">BOOK NOW</h2>
+    <p class="text-gray-500 text-sm mt-1">SS Rental Cars</p>
+
+    <div class="bg-white rounded-2xl p-4 mt-5 border">
+      <p class="text-xs text-gray-400 font-bold uppercase tracking-widest">Owner</p>
+      <p class="text-xl font-black mt-1">SHAIK SAMEER</p>
+      <p class="text-lg font-bold mt-1">9912182488</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-3 mt-5">
+      <button onclick="openPopup('')" class="w-full bg-[#25D366] text-white py-4 rounded-full font-black flex justify-center items-center gap-2 text-lg">
+        <i class="fa-brands fa-whatsapp text-2xl"></i> BOOK NOW ON WHATSAPP
+      </button>
+      <a href="tel:9912182488" class="w-full bg-black text-white py-4 rounded-full font-black flex justify-center items-center gap-2 text-lg">
+        <i class="fa-solid fa-phone"></i> CALL 9912182488
+      </a>
+    </div>
+
+    <p class="text-xs text-gray-400 mt-4">Primary booking number</p>
+  </div>
+</div>
+
+<!-- BOOKING POPUP -->
+<div id="popup" class="fixed inset-0 popup-bg hidden items-center justify-center z-50 p-4">
+  <div class="bg-[#f5f1e8] rounded-[2rem] p-6 md:p-8 w-full max-w-md pop-anim border border-white relative">
+    <button onclick="closePopup()" class="absolute top-4 right-4 w-8 h-8 bg-black text-white rounded-full"><i class="fa-solid fa-xmark"></i></button>
+    <h2 class="text-2xl font-black text-center">Book Your Car</h2>
+    <p class="text-center text-sm text-gray-500">SS Rental Cars - SHAIK SAMEER</p><p class="text-center text-xs font-bold mt-1">Primary Booking: 9912182488</p>
+    
+    <div class="mt-6 space-y-3">
+      <select id="carSelect" class="w-full p-3 rounded-xl border bg-white font-bold">
+        <option value="BALENO ZETA 2024 - Pearl Arctic White">BALENO ZETA 2024</option>
+        <option value="INNOVA 7 SEATER">INNOVA 7 SEATER</option>
+      </select>
+      <input id="custName" type="text" placeholder="Your Name" class="w-full p-3 rounded-xl border bg-white">
+      <input id="custPhone" type="tel" placeholder="Your Mobile Number" class="w-full p-3 rounded-xl border bg-white">
+      <input id="custDate" type="date" class="w-full p-3 rounded-xl border bg-white">
+      <textarea id="custMsg" placeholder="Pickup Location / Message" rows="2" class="w-full p-3 rounded-xl border bg-white"></textarea>
+      
+      <button onclick="sendWhatsApp()" class="w-full bg-[#25D366] text-white py-4 rounded-full font-black flex justify-center items-center gap-2 text-lg"><i class="fa-brands fa-whatsapp text-2xl"></i> SEND BOOKING ON WHATSAPP</button>
+      <a href="tel:9912182488" class="w-full bg-black text-white py-3 rounded-full font-bold flex justify-center items-center gap-2"><i class="fa-solid fa-phone shake"></i> OR CALL DIRECTLY</a>
+      <p class="text-center text-xs text-gray-400">Clicking Send will redirect to WhatsApp</p>
+    </div>
+  </div>
+</div>
+
+<script>
+let m=0,b=0,i=0;
+const mSlides=document.getElementById('mainSlides'), bSlides=document.getElementById('balenoSlides'), iSlides=document.getElementById('innovaSlides');
+function createDots(id,count,active){ let h=''; for(let k=0;k<count;k++) h+=`<div class="w-2 h-2 rounded-full ${k==active?'bg-black':'bg-gray-300'} transition-all"></div>`; document.getElementById(id).innerHTML=h; }
+createDots('mainDots',8,0); createDots('balenoDots',4,0); createDots('innovaDots',4,0);
+function moveMain(d){ m=(m+d+8)%8; mSlides.style.transform=`translateX(-${m*100}%)`; createDots('mainDots',8,m); }
+function moveBaleno(d){ b=(b+d+4)%4; bSlides.style.transform=`translateX(-${b*100}%)`; createDots('balenoDots',4,b); }
+function moveInnova(d){ i=(i+d+4)%4; iSlides.style.transform=`translateX(-${i*100}%)`; createDots('innovaDots',4,i); }
+
+// 2 SECOND INFINITY LOOP - ALL SLIDERS
+setInterval(()=>moveMain(1), 2000);
+setInterval(()=>moveBaleno(1), 2000);
+setInterval(()=>moveInnova(1), 2000);
+
+// Touch Swipe
+let sX=0; ['mainSliderBox','balenoBox','innovaBox'].forEach(id=>{ let el=document.getElementById(id); el.addEventListener('touchstart',e=>sX=e.touches[0].clientX); el.addEventListener('touchend',e=>{ let d=e.changedTouches[0].clientX-sX; if(Math.abs(d)>50){ if(id=='mainSliderBox') moveMain(d<0?1:-1); if(id=='balenoBox') moveBaleno(d<0?1:-1); if(id=='innovaBox') moveInnova(d<0?1:-1);} }); });
+
+// QUICK CONTACT POPUP
+function openContactPopup(type){
+  document.getElementById('contactPopup').classList.remove('hidden');
+  document.getElementById('contactPopup').classList.add('flex');
+}
+
+function closeContactPopup(){
+  document.getElementById('contactPopup').classList.add('hidden');
+  document.getElementById('contactPopup').classList.remove('flex');
+}
+
+document.getElementById('contactPopup').addEventListener('click', e=>{
+  if(e.target.id==='contactPopup') closeContactPopup();
+});
+
+// POPUP FUNCTIONS
+function openPopup(car){
+ document.getElementById('popup').classList.remove('hidden');
+ document.getElementById('popup').classList.add('flex');
+ if(car) document.getElementById('carSelect').value = car;
+}
+function closePopup(){
+ document.getElementById('popup').classList.add('hidden');
+ document.getElementById('popup').classList.remove('flex');
+}
+document.getElementById('popup').addEventListener('click', e=>{ if(e.target.id=='popup') closePopup(); });
+
+function sendWhatsApp(){
+ let car = document.getElementById('carSelect').value;
+ let name = document.getElementById('custName').value || "Customer";
+ let phone = document.getElementById('custPhone').value || "Not given";
+ let date = document.getElementById('custDate').value || "Not given";
+ let msg = document.getElementById('custMsg').value || "Rompicherla";
+ let text = `Hello SS Rental Cars (Sameer)%0A%0A*NEW BOOKING REQUEST*%0A%0A*Car:* ${encodeURIComponent(car)}%0A*Name:* ${encodeURIComponent(name)}%0A*Mobile:* ${encodeURIComponent(phone)}%0A*Date:* ${encodeURIComponent(date)}%0A*Location/Msg:* ${encodeURIComponent(msg)}%0A%0APlease confirm availability.`;
+ window.open(`https://wa.me/919912182488?text=${text}`, '_blank');
+ closePopup();
+}
+</script>
+</body>
+</html>
